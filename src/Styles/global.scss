@@ -1,9 +1,65 @@
 :root {
-    --cyan: hsla(184, 100%, 44%, 1);
-    --fixed-white: hsla(0, 0%, 100%, 1); 
-    --main-bg: hsla(0, 0%, 7%, 1);
-    --secondary-bg: hsla(0, 0%, 7%, 1);
-    --gray: hsla(0, 0%, 77%, 1);       
+  --font-size-base: 1.6rem;
+  --font-size-large: 3rem;
+  --font-size-medium: 2.4rem;
+  --font-size-small: 1.4rem;
 
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+
+  --color-primary: hsla(184, 100%, 44%, 1);
+
+  --color-text: hsla(0, 0%, 0%, 1);
+  --color-text-light: hsla(0, 0%, 77%, 1);
 }
 
+html {
+  font-size: 62.5%;
+}
+body,
+html {
+  height: 100vh;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  background-color: hsla(0, 0%, 8%, 1);
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  background-color: hsla(0, 0%, 8%, 1);
+  
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1080px;
+    height: 2px;
+    opacity: 0.5;
+    filter: blur(50%);
+    background-color: rgba(75, 72, 72, 0.445);
+  }
+}
+
+@media screen and (max-width: 585px) {
+  header::after {
+    display: none;
+  }
+
+  
+}
