@@ -1,7 +1,9 @@
+import { Home } from "./Pages/Home/Home";
+import "./styles/index.scss";
 function App() {
   return (
     <div>
-      <h1>hello world</h1>
+      <Home/>
     </div>
   );
 }
