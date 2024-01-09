@@ -1,0 +1,58 @@
+
+
+@mixin font-styles($size, $weight, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  @if $color {
+    color: $color;
+  }
+}
+
+body {
+  @include font-styles(var(--font-size-base), var(--font-weight-regular), var(--color-text));
+}
+
+.title {
+  @include font-styles(var(--font-size-large), var(--font-weight-bold), var(--color-primary));
+}
+
+.section__title {
+  @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--color-text));
+}
+
+.project__name {
+  @include font-styles(var(--font-size-small), var(--font-weight-medium), var(--color-text));
+}
+
+.menu__item {
+  font-size: 1.8rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.description__text {
+  @include font-styles(var(--font-size-base), var(--font-weight-light), var(--color-text-light));
+}
+
+.technology {
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-primary);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 80%;
+  }
+}
