@@ -13,21 +13,22 @@ export const NavegationMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleResize = () => {
+    setIsDesktop(window.innerWidth >= 768);
+  };
   useEffect(() => {
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 768);
-    };
-
     window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [handleResize]);
 
   return (
     <div className={navMenu.container}>
-      <img src={logoHeader} alt="Logotipo do Jhonatan Dev" />
+      <div className={navMenu.logoContainer}>
+        <img src={logoHeader} alt="Logotipo do Jhonatan Dev" />
+      </div>
 
       {isDesktop ? (
         <div>
@@ -47,7 +48,7 @@ export const NavegationMenu = () => {
             onClick={toggleMenu}
           >
             {isOpen ? (
-              <CgClose color="#FFFFFF" size={30} />
+              <CgClose color="#FFFFFF" size={25} />
             ) : (
               <BiMenuAltRight color="#FFFFFF" size={30} />
             )}

@@ -10,6 +10,7 @@
   --font-weight-bold: 600;
 
   --color-primary: hsla(184, 100%, 44%, 1);
+
   --color-text: hsla(0, 0%, 0%, 1);
   --color-text-light: hsla(0, 0%, 77%, 1);
 }
@@ -28,16 +29,37 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
+  background-color: hsla(0, 0%, 8%, 1);
 }
 
 header {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  
   background-color: hsla(0, 0%, 8%, 1);
-  z-index: 1000;
-  padding: 15px 0;
+  
 
-  background-color: hsla(0, 0%, 8%, 1);
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1080px;
+    height: 2px;
+    opacity: 0.5;
+    filter: blur(50%);
+    background-color: rgba(75, 72, 72, 0.445);
+  }
+}
+
+@media screen and (max-width: 585px) {
+  header::after {
+    display: none;
+  }
+
+  
 }
