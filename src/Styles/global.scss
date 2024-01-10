@@ -1,27 +1,31 @@
 :root {
-  --font-size-base: 1.6rem;
-  --font-size-large: 3rem;
-  --font-size-medium: 2.4rem;
-  --font-size-small: 1.4rem;
+  --font-size-base: 1.6rem; // 16px 
+  --font-size-x-large: 4.4rem; //44px 
+  --font-size-large: 3.0rem; //30px
+  --font-size-medium: 2.0rem; // 20px
+  --font-size-small: 1.4rem; //14px
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
-
+  --fixed-white: hsla(0, 0%, 100%, 1);
   --color-primary: hsla(184, 100%, 44%, 1);
-
   --color-text: hsla(0, 0%, 0%, 1);
   --color-text-light: hsla(0, 0%, 77%, 1);
 }
-
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
 body,
 html {
   height: 100vh;
-
+  
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -33,12 +37,11 @@ body {
 }
 
 header {
-  width: 100%;
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
-  width: 100%;
-  
+  width: 100%;   
   background-color: hsla(0, 0%, 8%, 1);
   
 
@@ -56,6 +59,7 @@ header {
   }
 }
 
+
 @media screen and (max-width: 768px) {
   header::after {
     display: none;
@@ -63,3 +67,6 @@ header {
 
   
 }
+
+
+

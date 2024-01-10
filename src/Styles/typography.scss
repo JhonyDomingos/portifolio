@@ -1,3 +1,22 @@
+/*
+:root {
+  --font-size-base: 1.6rem; // 16px 
+  --font-size-x-large: 4.4rem; //44px 
+  --font-size-large: 3.4rem; //34px
+  --font-size-medium: 2.0rem; // 20px
+  --font-size-small: 1.4rem; //14px
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 600;
+  --fixed-white: hsla(0, 0%, 100%, 1);
+  --color-primary: hsla(184, 100%, 44%, 1);
+  --color-text: hsla(0, 0%, 0%, 1);
+  --color-text-light: hsla(0, 0%, 77%, 1);
+}
+*/
+
 
 
 @mixin font-styles($size, $weight, $color: null) {
@@ -13,11 +32,13 @@ body {
 }
 
 .title {
-  @include font-styles(var(--font-size-large), var(--font-weight-bold), var(--color-primary));
+  @include font-styles(var(--font-size-x-large), var(--font-weight-bold), var(--color-primary));
+  text-transform: uppercase
 }
 
 .section__title {
-  @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--color-text));
+  @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--fixed-white));
+  text-transform: uppercase
 }
 
 .project__name {
@@ -25,7 +46,7 @@ body {
 }
 
 .menu__item {
-  font-size: 1.8rem;
+  font-size: var(--font-size-small);
   font-weight: var(--font-weight-bold);
 }
 
@@ -39,3 +60,20 @@ body {
   color: var(--color-primary);
 }
 
+@media screen and (max-width: 550px){
+  .title {
+    @include font-styles(var(--font-size-large), var(--font-weight-bold), var(--color-primary));
+    text-transform: uppercase
+  }
+}
+
+@media screen and (max-width: 468px){
+  .title {
+    @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--color-primary));
+    text-transform: uppercase
+  }
+
+  .section__title {
+    @include font-styles(var(--font-size-small), var(--font-weight-bold), var(--fixed-white));
+  }
+}
