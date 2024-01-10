@@ -52,6 +52,7 @@ header {
 
     & nav ul {      
       display: flex;
+      text-align: center;
       flex-direction: column;
       justify-content: space-between;
       gap: 1rem;      
@@ -70,8 +71,7 @@ header {
     }
 
     & nav ul a {
-      transition-duration: 0.5s;
-      font-size: 1.4rem;
+      transition-duration: 0.5s;      
       line-height: 4rem;
     }
   }

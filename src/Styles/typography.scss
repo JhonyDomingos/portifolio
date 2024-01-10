@@ -25,7 +25,7 @@ body {
 }
 
 .menu__item {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: var(--font-weight-bold);
 }
 
@@ -39,20 +39,3 @@ body {
   color: var(--color-primary);
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 100%;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 90%;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    font-size: 80%;
-  }
-}
