@@ -1,16 +1,17 @@
 :root {
   --font-size-base: 1.6rem; // 16px 
   --font-size-x-large: 4.4rem; //44px 
-  --font-size-large: 3.0rem; //30px
+  --font-size-large: 3.4rem; //30px
   --font-size-medium: 2.0rem; // 20px
   --font-size-small: 1.4rem; //14px
-
   --font-weight-light: 300;
   --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 600;
+  --background-main: hsla(0, 0%, 7%, 1);
+  --background-secondary: hsla(0, 0%, 8.24%, 1);
   --fixed-white: hsla(0, 0%, 100%, 1);
-  --color-primary: hsla(184, 100%, 44%, 1);
+  --color-primary: hsla(183, 100%, 44%, 1);
   --color-text: hsla(0, 0%, 0%, 1);
   --color-text-light: hsla(0, 0%, 77%, 1);
 }
@@ -33,7 +34,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  background-color: hsla(0, 0%, 8%, 1);
+  background-color: var(--background-main);
 }
 
 header {
@@ -42,8 +43,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;   
-  background-color: hsla(0, 0%, 8%, 1);
-  
+  background-color: var(--background-main);
 
   &::after {
     content: "";
