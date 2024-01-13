@@ -40,6 +40,10 @@ body {
   @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--fixed-white));
   text-transform: uppercase
 }
+.section__sub__title {
+  @include font-styles(var(--font-size-medium), var(--font-weight-medium), var(--fixed-white));
+  
+}
 
 .project__name {
   @include font-styles(var(--font-size-small), var(--font-weight-medium), var(--color-text));
@@ -74,6 +78,17 @@ body {
   }
 
   .section__title {
-    @include font-styles(var(--font-size-small), var(--font-weight-bold), var(--fixed-white));
+    @include font-styles(var(--font-size-medium), var(--font-weight-bold), var(--fixed-white));
   }
+
+
+  .section__sub__title {
+    @include font-styles(var(--font-size-base), var(--font-weight-bold), var(--fixed-white));
+    
+  }
+
+  .description__text {
+    @include font-styles(var(--font-size-small), var(--font-weight-light), var(--color-text-light));
+  }
+  
 }
