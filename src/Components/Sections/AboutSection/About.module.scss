@@ -17,7 +17,7 @@ section .info {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  // border: 1px solid red;
+
 
   & h2 {
     margin-bottom: 3rem;
@@ -49,7 +49,7 @@ section .picture__box {
     section .container {
         width: 90%; 
         justify-content: start;
-        padding: 5% 0;
+        padding: 10% 0;
     }
     
 }
