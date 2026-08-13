@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+/* Nocturne — tokens ported from the Claude Design project (styles.css).
+   Source of truth: reference/Portfolio.dc.html + the nocturne _ds bundle.
+   Dark-only design (no light theme), so tokens live directly in @theme —
+   no :root indirection needed for a prefers-color-scheme swap. */
+@theme {
+  --color-background: #161826;
+  --color-surface: #232532;
+  --color-foreground: #e9e9ed;
+  --color-accent: #9184d9;
+  --color-accent-2: #a7a1db;
+  --color-divider: color-mix(in srgb, #e9e9ed 16%, transparent);
+
+  --color-neutral-100: #f3f5fe;
+  --color-neutral-200: #e4e7f5;
+  --color-neutral-300: #cfd3e5;
+  --color-neutral-400: #b2b6ca;
+  --color-neutral-500: #9397ab;
+  --color-neutral-600: #75798c;
+  --color-neutral-700: #595d6c;
+  --color-neutral-800: #3f424d;
+  --color-neutral-900: #292b31;
+
+  --color-accent-100: #f5f4ff;
+  --color-accent-200: #e7e5fe;
+  --color-accent-300: #d2cefd;
+  --color-accent-400: #b5abfc;
+  --color-accent-500: #968ae0;
+  --color-accent-600: #796cbf;
+  --color-accent-700: #5d5294;
+  --color-accent-800: #423a6a;
+  --color-accent-900: #2b2741;
+
+  --color-section: #262a60;
+  --color-section-glow: #353b80;
+
+  --font-heading: var(--font-inter), system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, sans-serif;
+
+  /* radius/shadow scale override — reuses Tailwind's own rounded and shadow utility keys */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 0 0 1px var(--color-neutral-800);
+  --shadow-md: 0 0 0 1px var(--color-neutral-700), 0 6px 18px rgba(0, 0, 0, 0.55);
+  --shadow-lg: 0 0 0 1px var(--color-neutral-500), 0 16px 40px rgba(0, 0, 0, 0.65);
+
+  /* non-colliding named spacing (density 0.7x, from --space-* in styles.css) */
+  --spacing-s1: 2.8px;
+  --spacing-s2: 5.6px;
+  --spacing-s3: 8.4px;
+  --spacing-s4: 11.2px;
+  --spacing-s6: 16.8px;
+  --spacing-s8: 22.4px;
+}
+
+:root {
+  /* page rhythm (from the original Portfolio.dc.html hero wrapper) — not
+     Tailwind theme keys, consumed via arbitrary values e.g. px-[var(--edge)] */
+  --leading: 28px;
+  --half: 14px;
+  --edge: clamp(20px, 5vw, 72px);
+  --measure: 60ch;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+}
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+:focus { outline: none; }
+:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 2px; }
+::selection { background: color-mix(in srgb, var(--color-accent) 30%, transparent); }
+
+/* rules fade to transparent at both ends — a Nocturne signature */
+.hr {
+  height: 1px;
+  border: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--color-divider) 48px,
+    var(--color-divider) calc(100% - 48px),
+    transparent
+  );
+}

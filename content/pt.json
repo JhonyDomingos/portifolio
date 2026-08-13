@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Jhonatan Domingos · Engenheiro de Software | Sistemas sob medida",
+    "description": "Desenvolvo sistemas sob medida, automações e integrações para empresas que ainda dependem de planilhas e processos manuais. Também modernizo sistemas antigos que travam o crescimento do negócio."
+  },
+  "whatsappMessage": "Olá Jhonatan! Vi seu site e quero conversar sobre um projeto.",
+  "nav": { "sobre": "Sobre", "servicos": "Como ajudo", "projetos": "Projetos", "skills": "Tecnologia", "experiencia": "Experiência" },
+  "hero": {
+    "kicker": "Engenheiro de Software · Desenvolvimento de Sistemas",
+    "title": "Sua empresa perde tempo com processos manuais? Isso pode virar sistema.",
+    "sub1": "Desenvolvo sistemas sob medida, automações e integrações para empresas que ainda dependem de planilhas, copia-e-cola e tarefas repetitivas. Também modernizo sistemas antigos que estão travando o crescimento do negócio.",
+    "ctaProjects": "Quero conversar sobre meu projeto",
+    "ctaContact": "Conhecer soluções",
+    "tags": ["Sistemas sob medida", "Automações", "Integrações", "APIs", "Modernização"]
+  },
+  "sobre": {
+    "kicker": "Sobre",
+    "bio1": "Ajudo empresas a parar de depender de planilha, trabalho manual e sistemas que não se falam.",
+    "bio2": "Antes de pensar em tecnologia, eu entendo o processo real do seu negócio: onde está a perda de tempo, o retrabalho, o risco de erro humano. Só depois disso eu desenho a solução: pode ser um sistema novo, uma automação, uma integração entre ferramentas que você já usa, ou a modernização de algo antigo que ainda funciona, mas que ninguém mais quer mexer.",
+    "bio3": "Levo pra esse trabalho a mesma disciplina que uso em projetos corporativos de grande escala, sistemas usados por milhares de pessoas, com exigência alta de segurança e estabilidade. A diferença é que aqui você fala direto comigo, sem burocracia de projeto grande.",
+    "location": "João Pessoa, PB"
+  },
+  "servicos": {
+    "kicker": "Como posso ajudar",
+    "title": "Como posso ajudar sua empresa",
+    "items": [
+      { "num": "01", "title": "Sistemas sob medida", "desc": "Desenvolvimento de sistemas web para empresas que possuem processos específicos e não encontram uma solução pronta que atenda sua operação.", "bullets": ["Sistemas administrativos", "Plataformas internas", "Portais", "Dashboards", "Gestão de processos", "Sistemas para operações específicas"] },
+      { "num": "02", "title": "Automação de processos", "desc": "Sua empresa ainda depende de planilhas, copiar e colar informações ou executar tarefas repetitivas manualmente? Desenvolvo soluções para transformar esses processos em fluxos digitais mais rápidos e organizados." },
+      { "num": "03", "title": "Integração entre sistemas", "desc": "Quando duas ferramentas importantes para sua empresa não conversam entre si, posso desenvolver integrações através de APIs e serviços intermediários, reduzindo retrabalho e duplicidade de informações.", "diagram": ["E-commerce → Integração → ERP → Estoque / Faturamento", "Formulário do site → CRM → WhatsApp / Equipe comercial"] },
+      { "num": "04", "title": "Modernização de sistemas", "desc": "Sistemas antigos podem continuar sendo importantes para uma empresa, mas também podem limitar sua evolução. Atuo na modernização gradual dessas aplicações, APIs, integrações e bancos de dados, evitando a necessidade de reconstruir tudo de uma vez." },
+      { "num": "05", "title": "Migração e modernização de bancos de dados", "desc": "Migrar um banco de dados envolve centenas de tabelas, tipos de dado incompatíveis e muita validação manual. É um processo arriscado se feito às pressas. Estou desenvolvendo uma solução para automatizar boa parte dessas etapas, tornando a migração mais segura e previsível.", "cta": "Conversar sobre migração", "ctaSub": "Está planejando modernizar um sistema legado?" }
+    ]
+  },
+  "projetos": {
+    "kicker": "Projetos",
+    "title": "Projetos e experiência",
+    "cards": [
+      { "icon": "stack", "kicker": "Projetos de grande escala · Minsait", "title": "Sistemas corporativos", "body": "Desenvolvimento e evolução de sistemas usados internamente por grandes organizações, com integração entre várias ferramentas e bancos de dados diferentes. Esse é o padrão de qualidade que aplico em todo projeto, grande ou pequeno.", "tags": ["Java", "Spring", "Angular", "APIs", "SQL"], "link": null, "linkLabel": "" },
+      { "icon": "database", "kicker": "Migração de sistemas legados", "title": "Modernização de banco de dados", "body": "Atuação prática migrando sistemas de uma tecnologia de banco de dados para outra sem parar a operação da empresa. Essa experiência deu origem a um estudo próprio para automatizar parte desse processo.", "tags": ["Sistemas legados", "Banco de dados", "Modernização"], "link": null, "linkLabel": "" },
+      { "icon": "devices", "kicker": "Projeto corporativo · Compass UOL", "title": "BFF · App Meu Vivo", "body": "Trabalhei na camada que conecta o aplicativo Meu Vivo a diversos sistemas internos e externos (como Salesforce), garantindo que a informação certa chegue ao usuário final rapidamente, mesmo vindo de fontes diferentes.", "tags": ["NestJS", "React", "APIs", "BFF", "Salesforce"], "link": null, "linkLabel": "" },
+      { "icon": "code-simple", "kicker": "Projeto próprio", "title": "ConstruControl", "body": "Sistema para gerenciamento de processos, com login seguro e controle de quem pode acessar o quê. Projeto pessoal disponível no GitHub como demonstração prática do meu trabalho.", "tags": ["Java", "Spring Boot", "JWT", "Swagger"], "link": "https://github.com/JhonyDomingos", "linkLabel": "Ver no GitHub" },
+      { "icon": "currency-circle-dollar", "kicker": "Cliente TJPB", "title": "CGP: Controle Gerencial de Passivos", "body": "Sistema usado pelo tribunal para controlar e organizar passivos financeiros, informação que antes era mais difícil de acompanhar e centralizar.", "tags": ["Java", "PostgreSQL", "Gestão de passivos"], "link": null, "linkLabel": "" },
+      { "icon": "receipt", "kicker": "Cliente TJPB", "title": "Central de Cobranças", "body": "Sistema de cobrança judicial com autenticação segura e integração com bases internas do tribunal, feito para lidar com alto volume de processos sem falhar.", "tags": ["Spring Boot", "Hexagonal", "OAuth2/JWT", "Keycloak", "Oracle"], "link": null, "linkLabel": "" }
+    ]
+  },
+  "paraQuem": {
+    "kicker": "Para quem desenvolvo",
+    "lead": "Minhas soluções fazem sentido principalmente para empresas que:",
+    "items": ["ainda dependem muito de Excel e processos manuais", "precisam integrar sistemas diferentes", "possuem uma operação específica que softwares prontos não atendem", "precisam desenvolver um sistema interno", "possuem sistemas antigos que precisam ser modernizados", "precisam migrar ou modernizar bancos de dados", "possuem uma ideia de produto e precisam transformá-la em software"]
+  },
+  "skills": {
+    "kicker": "Tecnologia",
+    "intro": "Seção técnica: para quem quiser entender como eu trabalho por trás da solução.",
+    "backend": "Backend", "backendItems": ["Java", "Spring Boot", "Node.js", "NestJS", "APIs REST"],
+    "frontend": "Frontend", "frontendItems": ["Angular", "React"],
+    "arch": "Arquitetura", "archItems": ["Hexagonal", "CQRS", "Microsserviços", "BFF"],
+    "cloud": "Dados", "cloudItems": ["PostgreSQL", "Oracle", "SQL", "Migração de dados"],
+    "security": "Segurança", "securityItems": ["Cybersecurity", "Segurança de aplicações"],
+    "ia": "IA & produtividade", "iaItems": ["Claude Code", "GitHub Copilot", "LLMs"]
+  },
+  "experiencia": {
+    "kicker": "Experiência profissional",
+    "items": [
+      { "period": "Mar 2026 - Presente", "role": "System Engineer", "company": "Minsait (Indra Group)", "location": "João Pessoa, PB", "desc": "Desenvolvimento e evolução de sistemas corporativos, trabalhando com Java, Spring, Angular, APIs, bancos de dados e integração entre sistemas." },
+      { "period": "Abr 2025 - Fev 2026", "role": "Desenvolvedor Full Stack", "company": "Compass UOL", "location": "Passo Fundo, RS", "desc": "Atuação na evolução de aplicações B2B/B2C, utilizando NestJS e React, integração entre microsserviços e serviços externos." }
+    ]
+  },
+  "contato": {
+    "title": "Tem um processo que poderia funcionar melhor?",
+    "sub": "Se sua empresa tem um processo manual, sistemas que não conversam entre si, ou uma aplicação antiga que precisa evoluir, vamos conversar sobre o problema antes mesmo de falar de tecnologia. Muitas vezes a solução é mais simples do que parece.",
+    "ctaLabel": "Vamos entender o seu cenário"
+  },
+  "footer": { "rights": "Todos os direitos reservados." }
+}
