@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Jhonatan Domingos · Software Engineer | Custom systems",
+    "description": "I build custom systems, automations and integrations for companies still relying on spreadsheets and manual processes. I also modernize old systems holding back business growth."
+  },
+  "whatsappMessage": "Hi Jhonatan! I saw your website and would like to talk about a project.",
+  "nav": { "sobre": "About", "servicos": "How I help", "projetos": "Projects", "skills": "Technology", "experiencia": "Experience" },
+  "hero": {
+    "kicker": "Software Engineer · Systems Development",
+    "title": "Is your company losing time to manual processes? That can become a system.",
+    "sub1": "I build custom systems, automations and integrations for companies still relying on spreadsheets, copy-paste and repetitive tasks. I also modernize old systems holding back business growth.",
+    "ctaProjects": "Let's talk about my project",
+    "ctaContact": "See what I do",
+    "tags": ["Custom systems", "Automation", "Integrations", "APIs", "Modernization"]
+  },
+  "sobre": {
+    "kicker": "About",
+    "bio1": "I help companies stop depending on spreadsheets, manual work, and systems that don't talk to each other.",
+    "bio2": "Before thinking about technology, I understand your business's real process: where time is lost, where rework happens, where human error creeps in. Only then do I design the solution: a new system, an automation, an integration between tools you already use, or the modernization of something old that still works but nobody wants to touch anymore.",
+    "bio3": "I bring the same discipline I use on large-scale corporate projects, systems used by thousands of people, with high demands for security and stability. The difference is you talk directly to me, without the overhead of a big project.",
+    "location": "João Pessoa, Brazil"
+  },
+  "servicos": {
+    "kicker": "How I can help",
+    "title": "How I can help your company",
+    "items": [
+      { "num": "01", "title": "Custom systems", "desc": "Web systems for companies with specific processes that off-the-shelf software doesn't cover.", "bullets": ["Administrative systems", "Internal platforms", "Portals", "Dashboards", "Process management", "Systems for specific operations"] },
+      { "num": "02", "title": "Process automation", "desc": "Does your company still rely on spreadsheets, copy-pasting data or repeating manual tasks? I build solutions that turn these processes into faster, organized digital flows." },
+      { "num": "03", "title": "System integration", "desc": "When two important tools for your business don't talk to each other, I build integrations through APIs and intermediary services, cutting rework and duplicate data.", "diagram": ["Online store → Integration → ERP → Inventory / Billing", "Website form → CRM → WhatsApp / Sales team"] },
+      { "num": "04", "title": "System modernization", "desc": "Old systems can still matter to a company, but they can also hold back its growth. I work on gradually modernizing these applications, APIs, integrations and databases, without needing to rebuild everything at once." },
+      { "num": "05", "title": "Database migration & modernization", "desc": "Migrating a database means hundreds of tables, incompatible data types and a lot of manual validation. It's a risky process if rushed. I'm building a solution to automate much of this work, making migrations safer and more predictable.", "cta": "Talk about your migration", "ctaSub": "Planning to modernize a legacy system?" }
+    ]
+  },
+  "projetos": {
+    "kicker": "Projects",
+    "title": "Projects & experience",
+    "cards": [
+      { "icon": "stack", "kicker": "Large-scale projects · Minsait", "title": "Enterprise systems", "body": "Development and evolution of systems used internally by large organizations, integrating multiple tools and different databases. This is the quality bar I apply to every project, large or small.", "tags": ["Java", "Spring", "Angular", "APIs", "SQL"], "link": null, "linkLabel": "" },
+      { "icon": "database", "kicker": "Legacy system migration", "title": "Database modernization", "body": "Hands-on experience migrating systems from one database technology to another without stopping the business. This experience led to my own research into automating part of that process.", "tags": ["Legacy systems", "Databases", "Modernization"], "link": null, "linkLabel": "" },
+      { "icon": "devices", "kicker": "Enterprise project · Compass UOL", "title": "BFF · Meu Vivo App", "body": "I worked on the layer that connects the Meu Vivo app to several internal and external systems (like Salesforce), making sure the right information reaches the end user quickly, even coming from different sources.", "tags": ["NestJS", "React", "APIs", "BFF", "Salesforce"], "link": null, "linkLabel": "" },
+      { "icon": "code-simple", "kicker": "Personal project", "title": "ConstruControl", "body": "A process management system with secure login and access control. A personal project on GitHub as a practical demo of my work.", "tags": ["Java", "Spring Boot", "JWT", "Swagger"], "link": "https://github.com/JhonyDomingos", "linkLabel": "View on GitHub" },
+      { "icon": "currency-circle-dollar", "kicker": "TJPB client", "title": "CGP: Liability Management Control", "body": "A system used by the court to control and organize financial liabilities, information that used to be harder to track and centralize.", "tags": ["Java", "PostgreSQL", "Liability management"], "link": null, "linkLabel": "" },
+      { "icon": "receipt", "kicker": "TJPB client", "title": "Collections Center", "body": "A judicial collections system with secure authentication and integration with the court's internal databases, built to handle a high volume of cases without failing.", "tags": ["Spring Boot", "Hexagonal", "OAuth2/JWT", "Keycloak", "Oracle"], "link": null, "linkLabel": "" }
+    ]
+  },
+  "paraQuem": {
+    "kicker": "Who I build for",
+    "lead": "My solutions make the most sense for companies that:",
+    "items": ["still rely heavily on Excel and manual processes", "need to integrate different systems", "have a specific operation off-the-shelf software doesn't cover", "need to build an internal system", "have old systems that need modernizing", "need to migrate or modernize databases", "have a product idea and need to turn it into software"]
+  },
+  "skills": {
+    "kicker": "Technology",
+    "intro": "Technical section: for anyone who wants to see how I work behind the solution.",
+    "backend": "Backend", "backendItems": ["Java", "Spring Boot", "Node.js", "NestJS", "REST APIs"],
+    "frontend": "Frontend", "frontendItems": ["Angular", "React"],
+    "arch": "Architecture", "archItems": ["Hexagonal", "CQRS", "Microservices", "BFF"],
+    "cloud": "Data", "cloudItems": ["PostgreSQL", "Oracle", "SQL", "Data migration"],
+    "security": "Security", "securityItems": ["Cybersecurity", "Application security"],
+    "ia": "AI & productivity", "iaItems": ["Claude Code", "GitHub Copilot", "LLMs"]
+  },
+  "experiencia": {
+    "kicker": "Professional experience",
+    "items": [
+      { "period": "Mar 2026 - Present", "role": "System Engineer", "company": "Minsait (Indra Group)", "location": "João Pessoa, Brazil", "desc": "Development and evolution of corporate systems, working with Java, Spring, Angular, APIs, databases and system integration." },
+      { "period": "Apr 2025 - Feb 2026", "role": "Full Stack Developer", "company": "Compass UOL", "location": "Passo Fundo, Brazil", "desc": "Worked on the evolution of B2B/B2C applications using NestJS and React, integrating microservices and external services." }
+    ]
+  },
+  "contato": {
+    "title": "Got a process that could work better?",
+    "sub": "If your company has a manual process, systems that don't talk to each other, or an old application that needs to evolve, let's talk about the problem before we even discuss technology. Often the solution is simpler than it looks.",
+    "ctaLabel": "Let's understand your situation"
+  },
+  "footer": { "rights": "All rights reserved." }
+}
